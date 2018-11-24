@@ -1,0 +1,26 @@
+.navbarTitleWrapper {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  text-align: center;
+  border-top: 1px solid #DDE4EF;
+  display: grid;
+  grid-template-columns: repeat(12, [col] 1fr);
+  background-color: #FFFFFF;
+}
+
+.navTitle {
+  grid-column: 4 / 9;
+  justify-self: center;
+  align-self: center;
+}
+
+.navFilter {
+  grid-column: 10 / 12;
+  justify-self: center;
+  align-self: center;
+}
+
+
+

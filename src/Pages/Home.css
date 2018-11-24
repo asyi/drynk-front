@@ -10,3 +10,10 @@
   width: 809px;
   justify-self: center;
 }
+
+
+@media all and (max-width: 814px) {
+  .medRow {
+    display: none;
+  }
+}

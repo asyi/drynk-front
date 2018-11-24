@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className="gridLayout">
       <BannerCard />
-      <div class="medRow">
+      <div className="medRow">
         <MediumCard />
         <MediumCard />
       </div>

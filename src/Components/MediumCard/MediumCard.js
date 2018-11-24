@@ -9,9 +9,9 @@ import './MediumCard.css';
 function MediumCard() {
   return (
     <div className="mediumCardWrapper">
-      <img className="drinkImage" src={placeholder} alt="Veuve Clicqot Ponsardin Rose" />
-      <div className="detailsContainer">
-        <h2 className="productName">Veuve Clicqot Ponsardin Rose</h2>
+      <img className="drinkImage__medium" src={placeholder} alt="Veuve Clicqot Ponsardin Rose" />
+      <div className="detailsContainer__medium">
+        <h2 className="productName__medium">Veuve Clicqot Ponsardin Rose</h2>
         <DetailsSection />
       </div>
     </div>

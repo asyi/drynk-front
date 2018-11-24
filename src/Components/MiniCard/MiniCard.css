@@ -1,0 +1,124 @@
+.miniCardWrapper {
+  border: 1px solid #DDE4EF;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 25px 0;
+  align-items: center;
+  height: 355px;
+  width: 243px;
+}
+
+.miniCardWrapper:first-of-type {
+  margin-left: 20px;
+}
+
+.miniCardWrapper:last-of-type {
+  margin-right: 20px;
+}
+
+.productName__mini {
+  grid-column: 2 / -2;
+  align-self: end;
+  margin-bottom: 24px;
+  max-width: 224px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  text-align: center;
+  font-size: 20px;
+}
+
+.drinkImage__mini {
+  width: 112px;
+  height: 150px;
+  margin: 12px;
+}
+
+/* Details Section */
+.detailsContainer__mini {
+  margin: 0 22px;
+}
+
+.detailsWrapper__mini {
+  border-top: 1px solid #D8D8D8;
+  grid-column: 1 / -2;
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoWrapper__mini {
+  text-align: center;
+}
+
+.infoWrapper__mini > p,
+.productPrice__mini,
+.productStock__mini {
+  line-height: 28px;
+}
+
+.infoWrapper__mini > p {
+  max-width: 275px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+
+.productType__mini {
+  font-size: 14px;
+}
+
+.productSize__mini {
+  font-size: 12px;
+  color: #9E9A9F;
+}
+
+.productPriceWrapper__mini,
+.productStock__mini {
+  max-width: 60px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+
+.productPriceWrapper__mini {
+  font-size: 11px;
+}
+
+.productPrice__mini {
+  color: #423C44;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.priceWrapper__mini {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.stockWrapper__mini {
+  display: flex;
+  font-size: 11px;
+  color: #6F6A71;
+  text-transform: uppercase;
+}
+
+.checkIcon__mini {
+  width: 11px;
+  height: 8px;
+  align-self: center;
+  margin-right: 6px;
+}
+
+
+@media all and (max-width: 859px) {
+  .productName__mini {
+    font-size: 18px;
+  }
+
+  .miniCardWrapper {
+    padding-bottom: 0px;
+  }
+}

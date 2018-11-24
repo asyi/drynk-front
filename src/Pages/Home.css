@@ -3,14 +3,14 @@
   grid-template-columns: repeat(12,1fr);
 }
 
-.medRow {
+.medRow,
+.miniRow {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
   width: 809px;
   justify-self: center;
 }
-
 
 @media all and (max-width: 814px) {
   .medRow {

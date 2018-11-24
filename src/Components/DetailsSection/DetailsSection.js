@@ -4,16 +4,16 @@ import checkmark from '../../images/checkmark.png';
 
 function DetailsSection() {
   return (
-    <div className="detailsContainer">
+    <div className="detailsWrapper">
       <div className="infoWrapper">
         <p>Pinot Noir/Chardonnay</p>
         <p>750 mL bottle • 12.5% Alcohol</p>
       </div>
       <div className="priceWrapper">
-        <p>$89.95</p>
+        <p className="productPrice">$89.95</p>
         <div className="stockWrapper">
-          <img src={checkmark} alt="Checkmark Icon" />
-          <p>In Stock</p>
+          <img className="checkIcon" src={checkmark} alt="Checkmark Icon" />
+          <p className="productStock">In Stock</p>
         </div>
       </div>        
     </div>

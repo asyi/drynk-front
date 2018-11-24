@@ -8,17 +8,18 @@
   display: grid;
   grid-template-columns: repeat(12, [col] 1fr);
   background-color: #FFFFFF;
+  padding: 27px 0;
 }
 
 .navTitle {
-  grid-column: 4 / 9;
+  grid-column: 5 / 9;
   justify-self: center;
   align-self: center;
 }
 
 .navFilter {
-  grid-column: 10 / 12;
-  justify-self: center;
+  grid-column: 10 / 11;
+  justify-self: start;
   align-self: center;
 }
 

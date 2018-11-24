@@ -1,0 +1,46 @@
+.bannerWrapper {
+  grid-column: 1 / -1;
+  border: 1px solid #DDE4EF;
+  background: #FFFFFF;
+  justify-self: center;
+  margin: 20px;
+  width: 770px;
+  height: 300px;
+  display: flex;
+}
+
+.detailsContainer {
+  display: grid;
+  grid-template-columns: repeat(12, [col] 1fr);
+  width: 100%;
+}
+
+.productName {
+  grid-column: 1 / -2;
+  align-self: end;
+  margin-bottom: 27px;
+}
+
+@media all and (max-width: 859px) {
+  .bannerWrapper {
+    width: 670px;
+    height: 261px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .bannerWrapper {
+    width: 570px;
+    height: 222px;
+  }
+}
+
+@media all and (max-width: 659px) {
+  .bannerWrapper {
+    display: none;
+  }
+}
+
+.drinkImage {
+  margin: 20px;
+}

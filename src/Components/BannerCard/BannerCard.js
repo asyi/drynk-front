@@ -2,16 +2,19 @@ import React from 'react';
 
 import DetailsSection from '../DetailsSection/DetailsSection';
 
+import placeholder from '../../images/placeholder.png';
+
 import './BannerCard.css';
 
 
 function BannerCard() {
   return (
     <div className="bannerWrapper">
-      <img src="https://www.placebear.com/195/260" alt="Veuce Clicqot Ponsardin Rose" />
-      <h2>Veuve Clicqot Ponsardin Rose</h2>
-      <hr />
-      <DetailsSection />
+      <img className="drinkImage" src={placeholder} alt="Veuve Clicqot Ponsardin Rose" />
+      <div className="detailsContainer">
+        <h2 className="productName">Veuve Clicqot Ponsardin Rose</h2>
+        <DetailsSection />
+      </div>
     </div>
   );
 }

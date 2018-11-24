@@ -1,0 +1,5 @@
+.gridLayout {
+  grid-column: 3 / -3;
+  display: grid;
+  grid-template-columns: repeat(12, [col] 1fr);
+}

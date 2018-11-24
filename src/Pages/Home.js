@@ -2,9 +2,11 @@ import React from 'react';
 
 import BannerCard from '../Components/BannerCard/BannerCard';
 
+import './Home.css'
+
 function Home() {
   return (
-    <div className="bannerWrapper">
+    <div className="gridLayout">
       <BannerCard />
     </div>
   );

@@ -1,5 +1,12 @@
 .gridLayout {
-  grid-column: 3 / -3;
   display: grid;
-  grid-template-columns: repeat(12, [col] 1fr);
+  grid-template-columns: repeat(12,1fr);
+}
+
+.medRow {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  width: 809px;
+  justify-self: center;
 }

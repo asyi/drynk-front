@@ -1,6 +1,6 @@
 .background {
   background-color: #F5F8FB;
-  grid-template-columns: repeat(12, [col] 1fr);
+  padding-bottom: 10px;
 }
 
 h1, h2 {
@@ -27,9 +27,4 @@ p {
 
 .border {
   border: 1px solid #DDE4EF
-}
-
-.gridContainer {
-  display: grid;
-  grid-template-columns: repeat(12, [col] 1fr);
 }

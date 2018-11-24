@@ -9,6 +9,7 @@
   grid-template-columns: repeat(12, [col] 1fr);
   background-color: #FFFFFF;
   padding: 27px 0;
+  margin-bottom: 10px;
 }
 
 .navTitle {

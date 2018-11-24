@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App background">
         <Navbar />
-        <div className="gridContainer">
+        <div>
           <Home />
           </div>
       </div>

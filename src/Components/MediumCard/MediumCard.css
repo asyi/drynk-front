@@ -1,12 +1,25 @@
-.bannerWrapper {
-  grid-column: 3 / -3;
+.mediumCardWrapper {
   border: 1px solid #DDE4EF;
   background: #FFFFFF;
-  justify-self: center;
-  margin: 10px 20px;
-  width: 770px;
-  height: 300px;
   display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  height: 385px;
+  width: 375px;
+}
+
+.mediumCardWrapper:first-of-type {
+  margin-right: 10px;
+}
+
+.mediumCardWrapper:last-of-type {
+  margin-left: 10px;
+}
+
+.detailsWrapper {
+  grid-column: 2 / -2;
 }
 
 .detailsContainer {
@@ -22,6 +35,7 @@
   max-width: 500px;
   overflow-wrap: break-word;
   overflow: hidden;
+  text-align: center;
   
 }
 
@@ -44,3 +58,7 @@
 .drinkImage {
   margin: 20px;
 }
+
+/* .detailsWrapper {
+  grid-column: 2 / -2;
+} */

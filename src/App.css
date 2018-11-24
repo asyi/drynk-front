@@ -9,6 +9,12 @@ h1, h2 {
   font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
 }
 
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
 p {
   margin: 0;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;

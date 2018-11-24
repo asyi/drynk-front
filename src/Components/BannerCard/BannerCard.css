@@ -19,6 +19,10 @@
   grid-column: 1 / -2;
   align-self: end;
   margin-bottom: 27px;
+  max-width: 500px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  
 }
 
 @media all and (max-width: 859px) {
@@ -26,16 +30,12 @@
     width: 670px;
     height: 261px;
   }
-}
-
-@media all and (max-width: 768px) {
-  .bannerWrapper {
-    width: 570px;
-    height: 222px;
+  .productName {
+    font-size: 24px;
   }
 }
 
-@media all and (max-width: 659px) {
+@media all and (max-width: 768px) {
   .bannerWrapper {
     display: none;
   }

@@ -1,28 +1,41 @@
-.navbarTitleWrapper {
-  -webkit-transform: rotate(-180deg);
-  -moz-transform: rotate(-180deg);
-  -o-transform: rotate(-180deg);
-  transform: rotate(-180deg);
-  text-align: center;
-  border-top: 1px solid #DDE4EF;
-  display: grid;
-  grid-template-columns: repeat(12, [col] 1fr);
-  background-color: #FFFFFF;
-  padding: 27px 0;
+.navbkg {
+  background: #FFFFFF;
+  border-bottom: 1px solid #DDE4EF;
   margin-bottom: 10px;
 }
 
-.navTitle {
-  grid-column: 5 / 9;
+.navbarTitleWrapper {
+  display: grid;
+  width: 770px;
+  margin: 0 auto;
+  padding: 27px 0;
+  grid-template-columns: 16px auto;
+}
+
+.navLogo {
+  width: 74px;
+  height: 25px;
   justify-self: center;
-  align-self: center;
 }
 
 .navFilter {
-  grid-column: 10 / 11;
-  justify-self: start;
-  align-self: center;
+  width: 16px;
+  height: 20px;
 }
 
+@media all and (max-width: 814px) {
+  .navbarTitleWrapper {
+    width: 570px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .navbarTitleWrapper {
+    width: 100%;
+  }
+  .navFilter {
+    margin-left :20px;
+  }
+}
 
 

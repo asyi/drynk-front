@@ -33,7 +33,7 @@ function MiniCard(props) {
           <p className="productPriceWrapper__mini">$ <span className="productPrice__mini">{dollarPrice}</span></p>
           <div className="stockWrapper__mini">
             <img className="checkIcon" src={checkmark} alt="Checkmark Icon" />
-            <p className="productStock__mini">{stock}</p>
+            <p className="productStock__mini">{stock()}</p>
           </div>
         </div>        
       </div>

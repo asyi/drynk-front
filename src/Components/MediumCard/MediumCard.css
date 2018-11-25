@@ -35,6 +35,24 @@
   margin: 12px;
 }
 
+@media all and (max-width: 620px) {
+  .mediumCardWrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mediumCardWrapper:first-of-type {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  
+  .mediumCardWrapper:last-of-type {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+
 @media all and (max-width: 859px) {
   .productName__medium {
     font-size: 18px;

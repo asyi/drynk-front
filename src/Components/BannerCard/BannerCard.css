@@ -33,6 +33,12 @@
 
 @media all and (max-width: 814px) {
   .bannerWrapper {
+    width: 570px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .bannerWrapper {
     display: none;
   }
 }

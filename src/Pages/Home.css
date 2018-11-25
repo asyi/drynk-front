@@ -13,7 +13,24 @@
 }
 
 @media all and (max-width: 814px) {
+  .miniRow,
   .medRow {
     display: none;
   }
 }
+
+@media all and (max-width: 620px) {
+  .medRow {
+    display: none;
+  }
+  .singleCol {
+    display: grid;
+  }
+}
+
+@media all and (min-width: 621px) {
+  .singleCol {
+    display: none;
+  }
+}
+

@@ -15,9 +15,9 @@ function Home() {
         <MediumCard />
       </div>
       <div className="miniRow">
-        <MiniCard/>
-        <MiniCard/>
-        <MiniCard/>
+        <MiniCard />
+        <MiniCard />
+        <MiniCard />
       </div>
     </div>
   );

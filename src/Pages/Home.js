@@ -29,18 +29,20 @@ export default class Home extends React.Component {
           <div>
             <div className="gridLayout">
               <BannerCard
-                  container={product.package_unit_type}
-                  image={product.image_thumb_url}
-                  inventory={product.inventory_count}
-                  name={product.name}
-                  percentage={product.alcohol_content}
-                  price={product.price_in_cents}
-                  primaryCat={product.primary_category}
-                  productNumber={product.product_no}
-                  secondaryCat={product.secondary_category}
-                  volume={product.package_unit_volume_in_milliliters} />
+                key={`${product.id}banner`}
+                container={product.package_unit_type}
+                image={product.image_thumb_url}
+                inventory={product.inventory_count}
+                name={product.name}
+                percentage={product.alcohol_content}
+                price={product.price_in_cents}
+                primaryCat={product.primary_category}
+                productNumber={product.product_no}
+                secondaryCat={product.secondary_category}
+                volume={product.package_unit_volume_in_milliliters} />
               <div className="medRow">
                 <MediumCard
+                  key={`${product.id}medCard1`}
                   container={product.package_unit_type}
                   image={product.image_thumb_url}
                   inventory={product.inventory_count}
@@ -52,6 +54,7 @@ export default class Home extends React.Component {
                   secondaryCat={product.secondary_category}
                   volume={product.package_unit_volume_in_milliliters} />
                 <MediumCard
+                  key={`${product.id}medCard2`}
                   container={product.package_unit_type}
                   image={product.image_thumb_url}
                   inventory={product.inventory_count}
@@ -65,6 +68,7 @@ export default class Home extends React.Component {
               </div>
               <div className="miniRow">
                 <MiniCard
+                  key={`${product.id}miniCard1`}
                   container={product.package_unit_type}
                   image={product.image_thumb_url}
                   inventory={product.inventory_count}
@@ -76,6 +80,7 @@ export default class Home extends React.Component {
                   secondaryCat={product.secondary_category}
                   volume={product.package_unit_volume_in_milliliters} />              
                 <MiniCard
+                  key={`${product.id}miniCard2`}
                   container={product.package_unit_type}
                   image={product.image_thumb_url}
                   inventory={product.inventory_count}
@@ -87,6 +92,7 @@ export default class Home extends React.Component {
                   secondaryCat={product.secondary_category}
                   volume={product.package_unit_volume_in_milliliters} /> 
                 <MiniCard
+                  key={`${product.id}miniCard3`}
                   container={product.package_unit_type}
                   image={product.image_thumb_url}
                   inventory={product.inventory_count}
@@ -101,6 +107,7 @@ export default class Home extends React.Component {
             </div>
             <div className="singleCol">
               <MediumCard
+                key={`${product.id}singleColCard`}
                 container={product.package_unit_type}
                 image={product.image_thumb_url}
                 inventory={product.inventory_count}

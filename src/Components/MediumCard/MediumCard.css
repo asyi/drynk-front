@@ -34,6 +34,16 @@
   margin: 12px;
 }
 
+@media all and (max-width: 859px) {
+  .productName__medium {
+    font-size: 18px;
+  }
+
+  .mediumCardWrapper {
+    padding-bottom: 0px;
+  }
+}
+
 @media all and (max-width: 620px) and (min-width: 460px) {
   .mediumCardWrapper {
     width: 100%;
@@ -61,6 +71,7 @@
     justify-self: center;
     max-width: 90%;
     padding: 0 20px;
+    font-size: 24px;
   }
 }
 
@@ -90,15 +101,5 @@
     text-align: center;
     justify-self: center;
     max-width: 90%;
-  }
-}
-
-@media all and (max-width: 859px) {
-  .productName__medium {
-    font-size: 18px;
-  }
-
-  .mediumCardWrapper {
-    padding-bottom: 0px;
   }
 }

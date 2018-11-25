@@ -1,26 +1,36 @@
 import React from 'react';
 
 import checkmark from '../../images/checkmark.png';
-import placeholder from '../../images/placeholder.png';
 
 import './MiniCard.css';
 
-function MiniCard() {
+function MiniCard(props) {
+  const percentage = (parseInt(props.percentage)/100);
+  const dollarPrice = (parseInt(props.price)/100);
+  const stock = () => {
+    if (props.inventory > 0) {
+      return "In Stock"
+    }
+    else if (props.inventory === 0) {
+      return "Out of Stock"
+    }
+  }
+
   return (
     <div className="miniCardWrapper">
-      <img className="drinkImage__mini" src={placeholder} alt="Veuve Clicqot Ponsardin Rose" />
+      <img className="drinkImage__mini" src={props.image} alt={props.name} />
       <div className="detailsContainer__mini">
-        <h2 className="productName__mini">Veuve Clicqot Ponsardin Rose</h2>
+        <h2 className="productName__mini">{props.name}</h2>
         <div className="detailsWrapper__mini">
         <div className="infoWrapper__mini">
-          <p className="productType__mini">Pinot Noir/Chardonnay</p>
-          <p className="productSize__mini">750 mL bottle • 12.5% Alcohol</p>
+          <p className="productType__mini">{props.primaryCat}/{props.secondaryCat}</p>
+          <p className="productSize__mini">{props.volume} mL bottle • {props.alcohol}% Alcohol</p>
         </div>
         <div className="priceWrapper__mini">
           <p className="productPriceWrapper__mini">$ <span className="productPrice__mini">89.95</span></p>
           <div className="stockWrapper__mini">
             <img className="checkIcon" src={checkmark} alt="Checkmark Icon" />
-            <p className="productStock__mini">In Stock</p>
+            <p className="productStock__mini">{stock}</p>
           </div>
         </div>        
       </div>

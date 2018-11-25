@@ -1,40 +1,16 @@
-Opencare Front-End Challenge
-============
-
-Thank you for doing the Opencare Front-End Challenge, we look forward to seeing your implementation!  This project contains a bootstrapped React app and a basic Node.js proxy to get you started with the LCBO API.  Please feel free to use this as a basis for your solution or start form scratch, it's completely up to you :)  Your solution can be submitted as either a GitHub repo or tarball sent to [ronen@opencare.com](mailto:ronen@opencare.com?subject=Opencare%20Front-End%20Challenge%20Solution).
+Drynk - LCBO Product Catalogue
 
 Instructions
 ===============
 
 1. Ensure that `npm`, `node`(>= v6) and `yarn` are installed
-1. `yarn install`
-2. `yarn start`
-3. Test by going to: [http://localhost:1337/api/items](http://localhost:1337/api/items)
+1. You may also need a plugin such as [Allow-Control-Allow-Origin](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en)
+1. You will need to start by running the [Drynk server](https://github.com/asyi/drynk), which has its own set of instructions.
+1. Once the Drynk server is running, run `yarn install`
+1. `yarn start`
+1. Go to [http://localhost:3000](http://localhost:3000)
 
 Resources
 ===============
 
 * This app was generated using the [Create React App](https://github.com/facebookincubator/create-react-app) scaffolding
-* [Design Screenshots](https://projects.invisionapp.com//share/MUD9YJGY9#/screens/251162910)
-* [Design Sketch File](https://drive.google.com/open?id=1Q0McLuAs2VLhNSOZxhlhK-yh5doMCPhG) (If you don’t have Sketch, you can get a free trial [here](https://www.sketchapp.com/))
-
-Guidelines
-===============
-
-* Using the [unofficial LCBO API](https://lcboapi.com/), you will create an app that helps users discover products from LCBO.
-* You will first need to obtain a 'Backend / Server' API key by [signing up](https://lcboapi.com/sign-up) for an unofficial LCBO API account.  This key must be added to the `server.js` file.
-* You can either build on this boostraped React app or start from scratch
-* Your implementation should be as close to ‘pixel perfect’ as possible, however you do not need to have those specific drinks on your home page.
-* The design uses Google web fonts Lora and Roboto. You will need them installed to view the Sketch file properly.
-* Your app should be responsive.
-* Clicking on a product should take you to its lcbo.com product page ([here's an example](http://www.lcbo.com/lcbo/product/budweiser/902619)). The API does not provide links to the LCBO website, but you are able to generate them from data that it does provide.
-* **(optional)** When the user clicks on the “filter” icon on the top left, they should be able to filter, sort or search through their results. We have left this part of the app open ended for you to implement as you see fit - the criteria and the design are up to you.
-* Your project should be submitted as either a GitHub repo or tarball sent to [ronen@opencare.com](mailto:ronen@opencare.com?subject=Opencare%20Front-End%20Challenge%20Solution).
-
-Grading
-===============
-
-You will be evaluated based on
-* Code quality
-* Fidelity to the design
-* Usability

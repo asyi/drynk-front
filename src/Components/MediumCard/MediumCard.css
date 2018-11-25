@@ -19,7 +19,6 @@
 }
 
 .productName__medium {
-  grid-column: 2 / -2;
   align-self: end;
   margin-bottom: 24px;
   max-width: 315px;
@@ -50,6 +49,16 @@
   .mediumCardWrapper:last-of-type {
     margin-bottom: 20px;
     margin-left: 0;
+  }
+
+  .productNameWrapper__medium {
+    width: 400px;
+  }
+
+  .productName__medium {
+    text-align: center;
+    justify-self: center;
+    max-width: 400px;
   }
 }
 

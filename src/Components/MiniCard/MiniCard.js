@@ -24,10 +24,10 @@ function MiniCard(props) {
         <div className="detailsWrapper__mini">
         <div className="infoWrapper__mini">
           <p className="productType__mini">{props.primaryCat}/{props.secondaryCat}</p>
-          <p className="productSize__mini">{props.volume} mL bottle • {props.alcohol}% Alcohol</p>
+          <p className="productSize__mini">{props.volume} mL {props.container} • {percentage}% Alcohol</p>
         </div>
         <div className="priceWrapper__mini">
-          <p className="productPriceWrapper__mini">$ <span className="productPrice__mini">89.95</span></p>
+          <p className="productPriceWrapper__mini">$ <span className="productPrice__mini">{dollarPrice}</span></p>
           <div className="stockWrapper__mini">
             <img className="checkIcon" src={checkmark} alt="Checkmark Icon" />
             <p className="productStock__mini">{stock}</p>

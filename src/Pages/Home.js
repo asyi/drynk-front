@@ -94,7 +94,16 @@ export default class Home extends React.Component {
               </div>
             </div>
             <div className="singleCol">
-              <MediumCard />
+              <MediumCard
+                container={product.package_unit_type}
+                image={product.image_thumb_url}
+                inventory={product.inventory_count}
+                name={product.name}
+                percentage={product.alcohol_content}
+                price={product.price_in_cents}
+                primaryCat={product.primary_category}
+                secondaryCat={product.secondary_category}
+                volume={product.package_unit_volume_in_milliliters} />              
             </div>
           </div>
         ))}

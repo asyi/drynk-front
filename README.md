@@ -14,3 +14,8 @@ Resources
 ===============
 
 * This app was generated using the [Create React App](https://github.com/facebookincubator/create-react-app) scaffolding
+
+Notes
+===============
+
+* Do not use scss files in this project, as it they currently do not compile properly

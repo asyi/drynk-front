@@ -15,6 +15,13 @@
   width: 100%;
 }
 
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  align-self: end;
+}
+
 .productName {
   grid-column: 1 / -2;
   align-self: end;

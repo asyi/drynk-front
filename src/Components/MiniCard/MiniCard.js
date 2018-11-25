@@ -5,9 +5,9 @@ import checkmark from '../../images/checkmark.png';
 import './MiniCard.css';
 
 function MiniCard(props) {
-  const percentage = (parseInt(props.percentage)/100);
-  const dollarPrice = (parseInt(props.price)/100);
-  const stock = () => {
+  let percentage = (parseInt(props.percentage)/100);
+  let dollarPrice = (parseInt(props.price)/100);
+  let stock = () => {
     if (props.inventory > 0) {
       return "In Stock"
     }
@@ -15,12 +15,15 @@ function MiniCard(props) {
       return "Out of Stock"
     }
   }
+  let name = props.name.replace(/\s+/g, '-').toLowerCase();
+  let productNumber = props.productNumber;
+  let link = `https://www.lcbo.com/lcbo/product/${name}/${productNumber}`
 
   return (
     <div className="miniCardWrapper">
       <img className="drinkImage__mini" src={props.image} alt={props.name} />
       <div className="detailsContainer__mini">
-        <h2 className="productName__mini">{props.name}</h2>
+        <a target="none" className="link" href={link}><h2 className="productName__mini">{props.name}</h2></a>
         <div className="detailsWrapper__mini">
         <div className="infoWrapper__mini">
           <p className="productType__mini">{props.primaryCat}/{props.secondaryCat}</p>

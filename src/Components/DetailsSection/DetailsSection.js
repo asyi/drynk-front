@@ -3,9 +3,9 @@ import './DetailsSection.css';
 import checkmark from '../../images/checkmark.png';
 
 function DetailsSection(props) {
-  const percentage = (parseInt(props.percentage)/100);
-  const dollarPrice = (parseInt(props.price)/100);
-  const stock = () => {
+  let percentage = (parseInt(props.percentage)/100);
+  let dollarPrice = (parseInt(props.price)/100);
+  let stock = () => {
     if (props.inventory > 0) {
       return "In Stock"
     }

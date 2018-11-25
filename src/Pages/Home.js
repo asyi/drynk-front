@@ -36,6 +36,7 @@ export default class Home extends React.Component {
                   percentage={product.alcohol_content}
                   price={product.price_in_cents}
                   primaryCat={product.primary_category}
+                  productNumber={product.product_no}
                   secondaryCat={product.secondary_category}
                   volume={product.package_unit_volume_in_milliliters} />
               <div className="medRow">

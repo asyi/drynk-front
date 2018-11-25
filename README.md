@@ -1,45 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Opencare Front-End Challenge
+============
 
-## Available Scripts
+Thank you for doing the Opencare Front-End Challenge, we look forward to seeing your implementation!  This project contains a bootstrapped React app and a basic Node.js proxy to get you started with the LCBO API.  Please feel free to use this as a basis for your solution or start form scratch, it's completely up to you :)  Your solution can be submitted as either a GitHub repo or tarball sent to [ronen@opencare.com](mailto:ronen@opencare.com?subject=Opencare%20Front-End%20Challenge%20Solution).
 
-In the project directory, you can run:
+Instructions
+===============
 
-### `npm start`
+1. Ensure that `npm`, `node`(>= v6) and `yarn` are installed
+1. `yarn install`
+2. `yarn start`
+3. Test by going to: [http://localhost:1337/api/items](http://localhost:1337/api/items)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Resources
+===============
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+* This app was generated using the [Create React App](https://github.com/facebookincubator/create-react-app) scaffolding
+* [Design Screenshots](https://projects.invisionapp.com//share/MUD9YJGY9#/screens/251162910)
+* [Design Sketch File](https://drive.google.com/open?id=1Q0McLuAs2VLhNSOZxhlhK-yh5doMCPhG) (If you don’t have Sketch, you can get a free trial [here](https://www.sketchapp.com/))
 
-### `npm test`
+Guidelines
+===============
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Using the [unofficial LCBO API](https://lcboapi.com/), you will create an app that helps users discover products from LCBO.
+* You will first need to obtain a 'Backend / Server' API key by [signing up](https://lcboapi.com/sign-up) for an unofficial LCBO API account.  This key must be added to the `server.js` file.
+* You can either build on this boostraped React app or start from scratch
+* Your implementation should be as close to ‘pixel perfect’ as possible, however you do not need to have those specific drinks on your home page.
+* The design uses Google web fonts Lora and Roboto. You will need them installed to view the Sketch file properly.
+* Your app should be responsive.
+* Clicking on a product should take you to its lcbo.com product page ([here's an example](http://www.lcbo.com/lcbo/product/budweiser/902619)). The API does not provide links to the LCBO website, but you are able to generate them from data that it does provide.
+* **(optional)** When the user clicks on the “filter” icon on the top left, they should be able to filter, sort or search through their results. We have left this part of the app open ended for you to implement as you see fit - the criteria and the design are up to you.
+* Your project should be submitted as either a GitHub repo or tarball sent to [ronen@opencare.com](mailto:ronen@opencare.com?subject=Opencare%20Front-End%20Challenge%20Solution).
 
-### `npm run build`
+Grading
+===============
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# drynk-front
+You will be evaluated based on
+* Code quality
+* Fidelity to the design
+* Usability

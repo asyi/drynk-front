@@ -97,13 +97,6 @@
   }
 
   .productNameWrapper__medium {
-    width: 90%;
-    padding: 0 20px;
-  }
-
-  .productName__medium {
-    text-align: center;
-    justify-self: center;
     max-width: 90%;
   }
 }

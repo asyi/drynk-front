@@ -16,6 +16,7 @@
 }
 
 a {
+  grid-column: 1 / -2;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -23,13 +24,10 @@ a {
 }
 
 .productName {
-  grid-column: 1 / -2;
-  align-self: end;
   margin-bottom: 27px;
   max-width: 500px;
   overflow-wrap: break-word;
   overflow: hidden;
-  
 }
 
 @media all and (max-width: 859px) {

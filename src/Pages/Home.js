@@ -8,16 +8,21 @@ import './Home.css'
 
 function Home() {
   return (
-    <div className="gridLayout">
-      <BannerCard />
-      <div className="medRow">
-        <MediumCard />
-        <MediumCard />
+    <div>
+      <div className="gridLayout">
+        <BannerCard />
+        <div className="medRow">
+          <MediumCard />
+          <MediumCard />
+        </div>
+        <div className="miniRow">
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+        </div>
       </div>
-      <div className="miniRow">
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
+      <div className="singleCol">
+        <MediumCard />
       </div>
     </div>
   );
